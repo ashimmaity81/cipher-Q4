@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    vector<int> v1;
+    int num,new1;
+    cout<<"Enter number elements want to insert : ";
+    cin>>num;
+    cout<<"The store data are : ";
+    for(int i=0;i<num;i++){
+        int ele;
+        cin>>ele;
+        v1.push_back(ele);
+    }
+    for(int data:v1){
+        cout<<data<<" ";
+    }
+    cout<<"\nEnter new number to insert : ";
+    cin>>new1;
+    v1.push_back(new1);
+    
+    cout<<"The updated data are : ";
+    for(int update:v1){
+        cout<<update<<" ";
+    }
+    return 0;
+}
